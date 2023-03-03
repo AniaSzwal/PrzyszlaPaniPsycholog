@@ -182,12 +182,39 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  content: '';
+  content: "";
 }
 
 .nav__item:hover::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+
+@-webkit-keyframes navItemAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav-items-animation {
+  -webkit-animation: navItemAnimation 1s both;
+          animation: navItemAnimation 1s both;
 }
 
 .header {

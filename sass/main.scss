@@ -82,7 +82,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	transform: translateX(100%);
-	transition: 0.5s cubic-bezier(0.65,0.05,0.36,1);
+	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	background-image: $blue-gradient-solid;
 	z-index: 100;
 
@@ -108,14 +108,28 @@ body {
 			transform: scaleY(0);
 			background-color: $pure-white;
 			transition: transform 0.3s;
-			content: '';
+			content: "";
 		}
 
 		&:hover::before {
 			transform: scaleY(1);
-	
 		}
 	}
+}
+
+@keyframes navItemAnimation {
+	from {
+		transform: translateX(200%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.nav-items-animation {
+	animation: navItemAnimation 1s both; //both mówi, że wszystkie elementy animacji mają zaczynać się i kończyć w tych samych miejscach, dzięki czemu "kontakt" nie mruga
+	
 }
 
 //HEADER
