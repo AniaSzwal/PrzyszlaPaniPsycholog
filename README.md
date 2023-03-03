@@ -1,4 +1,4 @@
 ﻿# PrzyszlaPaniPsycholog
-Technologies used in this project: 
--> flexbox
--> BEM
+Technologies used in this project: <br>
+Flexbox <br>
+BEM
