@@ -31,7 +31,7 @@
 
 	&::before {
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -46,5 +46,40 @@
 	&:hover::before {
 		transform: scaleX(1);
 		transform-origin: left;
+	}
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 3em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: $main-color;
+	letter-spacing: 2px;
+}
+
+.section-padding {
+	padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6em;
+	}
+
+	.section-padding {
+		padding: 8em 2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8em;
+	}
+
+	.section-padding {
+		padding: 10em 2em;
 	}
 }
