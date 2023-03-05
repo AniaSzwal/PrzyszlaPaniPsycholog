@@ -1,3 +1,4 @@
 ﻿# PrzyszlaPaniPsycholog
-
-Project made in Flexbox
+Technologies used in this project: <br>
+Flexbox <br>
+BEM
